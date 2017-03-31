@@ -13,7 +13,7 @@ public class HeadMovement : MonoBehaviour {
     GroundCheck GroundedScript;
 	// Use this for initialization
 	void Start () {
-        GroundedScript = GameObject.Find("GroundCheck").GetComponent<GroundCheck>();
+        GroundedScript = GameObject.Find("CheckGroundObj").GetComponent<GroundCheck>();
         rigid = gameObject.GetComponent<Rigidbody2D>();
         facingLeft = true;
 	}
